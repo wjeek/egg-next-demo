@@ -9,5 +9,9 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+  config.next = {
+    dev: process.env.NODE_ENV !== 'production',
+  };
+
   return config;
 };

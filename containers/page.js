@@ -23,7 +23,7 @@ class Page extends React.Component {
   changeDescription = (index) => {
     this.props.dispatch(selectDescription(allDescriptionType[index])); // 测试性能优化
     this.props.dispatch(requestInit(allDescriptionType[index]));
-  }
+  };
 
   render() {
     const { receiveData } = this.props;
