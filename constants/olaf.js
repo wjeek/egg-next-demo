@@ -1,6 +1,6 @@
 export const allDescriptionType = [
   'OlafFirstDescription',
-  'OlafSecondDescription'
+  'OlafSecondDescription',
 ];
 
 export const projectName = 'olaf-react-next-pc';

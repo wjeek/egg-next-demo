@@ -1,1 +1,4 @@
 coverage
+app/
+config/
+test/

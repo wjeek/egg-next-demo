@@ -15,7 +15,7 @@ export const selectedDescription = (state = initialStateSelectedDescription, act
 
 const initialStateReceiveData = fromJS({
   description: null,
-  error: null
+  error: null,
 });
 
 export const receiveData = (state = initialStateReceiveData, action = {}) => {
@@ -31,5 +31,5 @@ export const receiveData = (state = initialStateReceiveData, action = {}) => {
 
 export const olafState = {
   selectedDescription: initialStateSelectedDescription,
-  receiveData: initialStateReceiveData
+  receiveData: initialStateReceiveData,
 };

@@ -5,7 +5,7 @@ import { actionTypes } from '../actions/olaf';
 
 function* rootSaga() {
   yield all([
-    takeLatest(actionTypes.REQUEST_INIT, requestDataSaga)
+    takeLatest(actionTypes.REQUEST_INIT, requestDataSaga),
   ]);
 }
 

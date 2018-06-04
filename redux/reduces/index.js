@@ -4,9 +4,9 @@ import { selectedDescription, receiveData, olafState } from './olaf';
 
 export const rootReducer = combineReducers({
   selectedDescription,
-  receiveData
+  receiveData,
 });
 
 export const rootInitialState = {
-  ...olafState
+  ...olafState,
 };

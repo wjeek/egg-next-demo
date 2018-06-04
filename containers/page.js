@@ -9,13 +9,12 @@ import { selectDescription, requestInit } from '../redux/actions/olaf';
 
 const Scene = dynamic(import('../components/scene'), {
   ssr: false,
-  loading: () => false
+  loading: () => false,
 });
 
 class Page extends React.Component {
   shouldComponentUpdate(nextProps) {
     if (is(nextProps.receiveData, this.props.receiveData)) {
-      console.log('false');
       return false;
     }
     return true;
@@ -30,10 +29,10 @@ class Page extends React.Component {
     const { receiveData } = this.props;
     return (
       <div className="main">
-        <Scene/>
+        <Scene />
         <div className="content">
           <div className="center">
-            <img className="logo" src="/static/cdn/img/logo.png" />
+            <img className="logo" src="/static/cdn/img/logo.png" alt="logo" />
             <h2>{receiveData.get('description')}</h2>
             <div className="btn-group">
               <a className="btn btn-lg btn-white" onClick={() => this.changeDescription(0)}>description one</a>
@@ -52,7 +51,7 @@ class Page extends React.Component {
               position: relative;
               z-index: 3;
               width: 100vw;
-              height: 100vh;
+              height: 150vh;
               .center {
                 height: 90vh;
                 lost-offset: 1/6;
