@@ -1,11 +1,10 @@
 import React from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 import { requestInit } from '../redux/actions/olaf';
 import Page from '../containers/page';
 
 class Index extends React.Component {
-
   static async getInitialProps(props) {
     const { store, isServer } = props.ctx;
     const state = store.getState();
@@ -17,8 +16,8 @@ class Index extends React.Component {
   componentDidMount() {}
 
   render() {
-    return <Page/>;
+    return <Page />;
   }
 }
 
-export default connect()(Index)
+export default connect()(Index);

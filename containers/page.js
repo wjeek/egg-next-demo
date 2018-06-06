@@ -41,82 +41,84 @@ class Page extends React.Component {
           </div>
         </div>
         {/* language=LESS */}
-        <style jsx>{`
-          .main {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            .content {
-              background: rgba(0, 0, 0, 0.6);
+        <style jsx>
+          {`
+            .main {
               position: relative;
-              z-index: 3;
               width: 100vw;
-              height: 150vh;
-              .center {
-                height: 90vh;
-                lost-offset: 1/6;
-                lost-column: 4/6;
-                text-align: center;
-                .logo {
-                  width: 438px;
-                  height: 512px;
-                }
-                h2 {
-                  color: #fff;
-                  font-size: 40px;
-                  lost-row: 1/6;
-                }
-                .btn-group {
-                  lost-row: 1/6;
-                  .btn {
-                    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    border: 2px solid ${color.blue};
-                    padding: 0 26px;
-                    min-width: 150px;
-                    line-height: 36px;
-                    font-size: 12px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    border-radius: 0;
-                    color: ${color.blue};
-                    text-align: center;
-                    transition: all 0.3s ease;
-                    white-space: normal;
-                    cursor: pointer;
+              height: 100vh;
+              .content {
+                background: rgba(0, 0, 0, 0.6);
+                position: relative;
+                z-index: 3;
+                width: 100vw;
+                height: 150vh;
+                .center {
+                  height: 90vh;
+                  lost-offset: 1/6;
+                  lost-column: 4/6;
+                  text-align: center;
+                  .logo {
+                    width: 438px;
+                    height: 512px;
                   }
-                  .btn-lg {
-                    line-height: 24px;
-                    min-width: 200px;
-                    padding-bottom: 13px;
-                    padding-top: 13px;
-                    box-sizing: border-box;
-                    margin: 0 24px;
-                  }
-                  .btn-white {
+                  h2 {
                     color: #fff;
-                    border-color: #fff;
-                    &:hover {
-                      background: #fff;
-                      border-color: #fff;
-                      color: #222;
+                    font-size: 40px;
+                    lost-row: 1/6;
+                  }
+                  .btn-group {
+                    lost-row: 1/6;
+                    .btn {
+                      font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                      border: 2px solid ${color.blue};
+                      padding: 0 26px;
+                      min-width: 150px;
+                      line-height: 36px;
+                      font-size: 12px;
+                      font-weight: 700;
+                      text-transform: uppercase;
+                      letter-spacing: 1px;
+                      border-radius: 0;
+                      color: ${color.blue};
+                      text-align: center;
+                      transition: all 0.3s ease;
+                      white-space: normal;
+                      cursor: pointer;
                     }
-                  }
-                  .btn-filled {
-                    background: ${color.blue};
-                    color: #fff;
-                    border-color: ${color.blue};
-                    &:hover {
-                      background: ${color.blueActive};
-                      border-color: ${color.blueActive};
+                    .btn-lg {
+                      line-height: 24px;
+                      min-width: 200px;
+                      padding-bottom: 13px;
+                      padding-top: 13px;
+                      box-sizing: border-box;
+                      margin: 0 24px;
+                    }
+                    .btn-white {
                       color: #fff;
+                      border-color: #fff;
+                      &:hover {
+                        background: #fff;
+                        border-color: #fff;
+                        color: #222;
+                      }
+                    }
+                    .btn-filled {
+                      background: ${color.blue};
+                      color: #fff;
+                      border-color: ${color.blue};
+                      &:hover {
+                        background: ${color.blueActive};
+                        border-color: ${color.blueActive};
+                        color: #fff;
+                      }
                     }
                   }
                 }
               }
             }
-          }
-        `}</style>
+          `}
+        </style>
       </div>
     );
   }

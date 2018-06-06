@@ -43,7 +43,7 @@ export default class extends Document {
           }
         `}</style>
       </Head>
-      <body>
+      <body style={{ margin: 0, overflow: 'hidden' }}>
         <Main />
         <NextScript />
       </body>
