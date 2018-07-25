@@ -1,5 +1,5 @@
 export const server = {
-  baseUrl: 'https://www.easy-mock.com/mock/5a3a31f9ccd95b5cf43c5d91/api/',
+  baseUrl: 'https://easy-mock.com/mock/5b5808b436d0751a61c15291/next-api/',
 };
 
 export const other = {

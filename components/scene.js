@@ -15,11 +15,11 @@ export default class Scene extends React.PureComponent {
       width: $(window).outerWidth() + 120,
       position: 'absolute',
       'margin-left': -60,
-      'margin-top': -60
+      'margin-top': -60,
     });
     $('#scene').children().each((index) => {
       $('#scene').eq(index).css({
-        height: $(window).outerHeight() + 100
+        height: $(window).outerHeight() + 100,
       });
     });
     this.parallaxInstance = new Parallax(scene);
