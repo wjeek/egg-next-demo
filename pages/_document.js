@@ -9,7 +9,6 @@ export default class extends Document {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="description" content="egg & next.js demo" />
         <meta name="keywords" content="Egg,Next,React,demo" />
-        <title>Egg-Next-demo</title>
         <link rel="shortcut icon" href="/static/cdn/img/favicon.ico" type="image/x-icon" />
         {/* language=CSS */}
         <style jsx global>{`
