@@ -78,9 +78,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Gavin1995/egg-next-boilerplate.git"
+    "url": "https://github.com/wjeek/egg-next-demo.git"
   },
-  "author": "Gavin <gavin199502@gmail.com>",
+  "author": "wjeek <1248997541@qq.com>",
   "license": "MIT",
   "postcss": {
     "plugins": {
