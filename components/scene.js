@@ -1,34 +1,34 @@
-import React from 'react';
-import Parallax from 'parallax-js';
-import { Bind, Debounce } from 'lodash-decorators';
-import $ from 'jquery';
+import React from 'react'
+import Parallax from 'parallax-js'
+import { Bind, Debounce } from 'lodash-decorators'
+import $ from 'jquery'
 
 export default class Scene extends React.PureComponent {
   componentDidMount() {
-    this.initParallax();
-    window.addEventListener('resize', this.resize);
+    this.initParallax()
+    window.addEventListener('resize', this.resize)
   }
 
   initParallax() {
-    const scene = document.getElementById('scene');
+    const scene = document.getElementById('scene')
     $('#scene').css({
       width: $(window).outerWidth() + 120,
       position: 'absolute',
       'margin-left': -60,
       'margin-top': -60,
-    });
+    })
     $('#scene').children().each((index) => {
       $('#scene').eq(index).css({
         height: $(window).outerHeight() + 100,
-      });
-    });
-    this.parallaxInstance = new Parallax(scene);
+      })
+    })
+    this.parallaxInstance = new Parallax(scene)
   }
 
   @Bind()
   @Debounce(500)
   resize() {
-    this.initParallax();
+    this.initParallax()
   }
 
   render() {
@@ -42,10 +42,10 @@ export default class Scene extends React.PureComponent {
         <style jsx>{`
           ul {
             li:nth-child(1) {
-              background-image: url('/static/cdn/img/back.png');
+              background-image: url('/static/cdn/img/back.png')
             }
             li:nth-child(2) {
-              background-image: url('/static/cdn/img/front.png');
+              background-image: url('/static/cdn/img/front.png')
             }
             .layer {
               width: 100%;
@@ -56,6 +56,6 @@ export default class Scene extends React.PureComponent {
           }
         `}</style>
       </div>
-    );
+    )
   }
 }

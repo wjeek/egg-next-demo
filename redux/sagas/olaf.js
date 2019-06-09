@@ -1,16 +1,16 @@
-import { put } from 'redux-saga/effects';
+import { put } from 'redux-saga/effects'
 
-import { get } from '../../utilities/fetch';
-import { requestFailure, requestSuccess } from '../actions/olaf';
+import { get } from '../../utilities/fetch'
+import { requestFailure, requestSuccess } from '../actions/olaf'
 
 function* requestDataSaga({ selectedDescription }) {
   try {
-    const res = yield get(selectedDescription);
-    const data = yield res.json();
-    yield put(requestSuccess(data));
+    const res = yield get(selectedDescription)
+    const data = yield res.json()
+    yield put(requestSuccess(data))
   } catch (err) {
-    yield put(requestFailure(err.message));
+    yield put(requestFailure(err.message))
   }
 }
 
-export default requestDataSaga;
+export default requestDataSaga

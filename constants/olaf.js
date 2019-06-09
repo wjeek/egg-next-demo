@@ -3,4 +3,4 @@ export const allDescriptionType = [
   'OlafSecondDescription',
 ];
 
-export const projectName = 'olaf-react-next-pc';
+export const projectName = 'olaf-react-next-pc'

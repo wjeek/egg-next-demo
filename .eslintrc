@@ -14,6 +14,7 @@
     "jasmine": true
   },
   "rules": {
+    "semi": ["error", "never"],
     "react/no-unused-state": true,
     "generator-star-spacing": [0],
     "consistent-return": [0],

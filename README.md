@@ -1,7 +1,4 @@
-[![repo size](https://img.shields.io/github/repo-size/Gavin1995/egg-next-boilerplate.svg)](https://github.com/Gavin1995/egg-next-boilerplate)
-[![license](https://img.shields.io/github/license/Gavin1995/egg-next-boilerplate.svg)](https://github.com/Gavin1995/egg-next-boilerplate)
-
-# Egg-Next-Boilerplate
+# Egg-Next-Demo
 [Egg@2.8.1](https://github.com/eggjs/egg/) & [Next.js@6.0.3](https://github.com/zeit/next.js/) SSR By React Redux Saga Immutable.
 
 ## 特性
@@ -34,12 +31,3 @@
 ## 兼容性
 
 Node >= 8.9.0
-
-## 参与贡献
-
-我非常欢迎你的贡献，你可以通过以下方式和我一起共建 :smiley:：
-
-- 在你的公司或个人项目中使用 egg-next-boilerplate。
-- 通过 [Issue](https://github.com/Gavin1995/egg-next-boilerplate/issues) 报告 bug 或进行咨询。
-- 提交 [Pull Request](https://github.com/Gavin1995/egg-next-boilerplate/pulls) 改进 egg-next-boilerplate 的代码。
-

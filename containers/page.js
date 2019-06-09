@@ -1,32 +1,32 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import dynamic from 'next/dynamic';
-import { is } from 'immutable';
+import React from 'react'
+import { connect } from 'react-redux'
+import dynamic from 'next/dynamic'
+import { is } from 'immutable'
 
-import { color } from '../constants/style';
-import { allDescriptionType } from '../constants/olaf';
-import { selectDescription, requestInit } from '../redux/actions/olaf';
+import { color } from '../constants/style'
+import { allDescriptionType } from '../constants/olaf'
+import { selectDescription, requestInit } from '../redux/actions/olaf'
 
 const Scene = dynamic(import('../components/scene'), {
   ssr: false,
   loading: () => false,
-});
+})
 
 class Page extends React.Component {
   shouldComponentUpdate(nextProps) {
     if (is(nextProps.receiveData, this.props.receiveData)) {
-      return false;
+      return false
     }
-    return true;
+    return true
   }
 
   changeDescription = (index) => {
-    this.props.dispatch(selectDescription(allDescriptionType[index])); // 测试性能优化
-    this.props.dispatch(requestInit(allDescriptionType[index]));
-  };
+    this.props.dispatch(selectDescription(allDescriptionType[index])) // 测试性能优化
+    this.props.dispatch(requestInit(allDescriptionType[index]))
+  }
 
   render() {
-    const { receiveData } = this.props;
+    const { receiveData } = this.props
     return (
       <div className="main">
         <Scene />
@@ -59,8 +59,9 @@ class Page extends React.Component {
                   lost-column: 4/6;
                   text-align: center;
                   .logo {
-                    width: 438px;
-                    height: 512px;
+                    width: 400px;
+                    height: 400px;
+                    margin-top: 30px;
                   }
                   h2 {
                     color: #fff;
@@ -124,4 +125,4 @@ class Page extends React.Component {
   }
 }
 
-export default connect(state => state)(Page);
+export default connect(state => state)(Page)

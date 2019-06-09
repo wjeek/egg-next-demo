@@ -1,35 +1,35 @@
-import { fromJS } from 'immutable';
+import { fromJS } from 'immutable'
 
-import { actionTypes } from '../actions/olaf';
-import { allDescriptionType } from '../../constants/olaf';
+import { actionTypes } from '../actions/olaf'
+import { allDescriptionType } from '../../constants/olaf'
 
-const initialStateSelectedDescription = allDescriptionType[0];
+const initialStateSelectedDescription = allDescriptionType[0]
 export const selectedDescription = (state = initialStateSelectedDescription, action = {}) => {
   switch (action.type) {
     case actionTypes.SELECT_DESCRIPTION:
-      return action.descriptionType;
+      return action.descriptionType
     default:
-      return state;
+      return state
   }
-};
+}
 
 const initialStateReceiveData = fromJS({
   description: null,
   error: null,
-});
+})
 
 export const receiveData = (state = initialStateReceiveData, action = {}) => {
   switch (action.type) {
     case actionTypes.RECEIVE_GETS:
-      return state.set('description', action.data.description);
+      return state.set('description', action.data.description)
     case actionTypes.REQUEST_FAILURE:
-      return state.set('error', action.error);
+      return state.set('error', action.error)
     default:
-      return state;
+      return state
   }
-};
+}
 
 export const olafState = {
   selectedDescription: initialStateSelectedDescription,
   receiveData: initialStateReceiveData,
-};
+}
