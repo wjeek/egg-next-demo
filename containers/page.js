@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { is } from 'immutable'
 
@@ -37,6 +38,7 @@ class Page extends React.Component {
             <div className="btn-group">
               <a className="btn btn-lg btn-white" onClick={() => this.changeDescription(0)}>description one</a>
               <a className="btn btn-lg btn-filled" onClick={() => this.changeDescription(1)}>description two</a>
+              <Link href="/detail"><a className="btn btn-lg btn-filled">点我跳转到详情页</a></Link>
             </div>
           </div>
         </div>

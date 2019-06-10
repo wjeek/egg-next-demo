@@ -44,6 +44,7 @@ export default class extends Document {
       </Head>
       <body style={{ margin: 0, overflow: 'hidden' }}>
         <Main />
+        <script src="https://unpkg.com/unpolyfill"></script>
         <NextScript />
       </body>
       </html>
